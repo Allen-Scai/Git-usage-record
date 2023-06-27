@@ -35,11 +35,14 @@ SVN 需要从中央服务器更新后，才能看到对应的更改内容
 >
 > - git config --global --list # 全局配置，用户自己配置
 > 例如配置了下面的用户名和邮箱
+>
 > ![](Images/2023-06-24-13-44-39.png)
+>
 > - **相关的文件在 C:\Users\Administrator\\.gitconfig 目录下，只使用户当前登录用户的配置.**
 > **比如我是用户scai，那么我的全局配置文件应该在 C:\Users\sccai\.gitconfig 下面**
 > **--global 表示全局**
 > - **通过如下方式添加用户和邮箱**
+>
 > ![](Images/2023-06-24-13-49-05.png)
 
 # 3 Git 的核心理论
@@ -111,11 +114,13 @@ doc/*.txt    #会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
 ```
 
 # 5 使用 Github
+
+## 5.1 添加 ssh 公钥
 >
-> 1. 添加 ssh 公钥
 > **cd ~/.ssh/  进入到用户目录下的 .ssh/ 文件夹下执行下面的命令**
 > `ssh-keygen -t rsa`
-> **生成了两个文件，带 .pub 的是公钥，不带的是私钥
+> 生成了两个文件，带 .pub 的是公钥，不带的是私钥
+>
 > ![](Images/2023-06-24-15-05-10.png)
 
 # 5 Git 分支

@@ -85,10 +85,10 @@ git init
 
 ## 4.1 查看文件状态
 
-> - 查看[指定]文件状态 git status file_name
-> - 查看所有文件状态 git status
-> git add file_name 将文件加入到暂存区【添加版本控制】
-> git commit -m "消息内容"  提交暂存区中的内容到本地仓库，m 是 message 的意思
+> - 查看[指定]文件状态 `git status file_name`
+> - 查看所有文件状态 `git status`
+> `git add file_name` 将文件加入到暂存区【添加版本控制】
+> `git commit -m "消息内容"`提交暂存区中的内容到本地仓库，m 是 message 的意思
 
 ## 4.2 忽略文件
 
@@ -100,7 +100,7 @@ git init
 > - 如果名称的最前面是一个路径分隔符（/），表示要忽略的文件在此目录下，而子目录中的文件不忽略。
 > - 如果名称的最后面是一个路径分隔符（/），表示要忽略的是此目录下该名称的子目录，而非文件（默认文件或目录都忽略）。
 >
-```c
+```bash
 
 #为注释
 *.txt        #忽略所有 .txt结尾的文件,这样的话上传就不会被选中！
@@ -114,7 +114,7 @@ doc/*.txt    #会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
 >
 > 1. 添加 ssh 公钥
 > **cd ~/.ssh/  进入到用户目录下的 .ssh/ 文件夹下执行下面的命令**
-> **ssh-keygen -t rsa**
+> `ssh-keygen -t rsa`
 > **生成了两个文件，带 .pub 的是公钥，不带的是私钥
 > ![](Images/2023-06-24-15-05-10.png)
 
